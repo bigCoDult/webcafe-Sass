@@ -1,1 +1,29 @@
-// button.scss
+@use "./../utils" as *;
+
+// .button {
+//   border:;
+// }
+
+// &--fill{
+//   // hi
+// }
+
+// &--outline{
+//   // hi
+//   color: $brown;}
+
+
+//햄버거 버튼
+
+.button--burger{
+  @include desktop{
+    display: none;
+  }
+
+  @include mobile{
+    width: 50px;
+    hei
+
+  }
+}
+

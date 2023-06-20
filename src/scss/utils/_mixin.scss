@@ -1,5 +1,43 @@
+@use "./../utils/unit" as *;
+
 @mixin posCenter {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+
+@mixin autoPadding($spacing){
+  @mixin paddingX{}
+  @mixin paddingY{} 
+}
+@mixin paddingX($spacing) {
+  padding-left: rem($spacing);
+  padding-right: rem($spacing);
+}
+@mixin paddingY($spacing) {
+  padding-top: rem($spacing);
+  padding-bottom: rem($spacing);
+}
+
+@mixin autoMargin{
+  @mixin marginX{}
+  @mixin marginY{} 
+}
+@mixin marginX($spacing) {
+  margin-left: rem($spacing);
+  margin-right: rem($spacing);
+}
+@mixin marginY($spacing) {
+  margin-top: rem($spacing);
+  margin-bottom: rem($spacing);
+}
+
+
+//포지션 관련 믹스인
+
+
+@mixin containerMax ($max-width: 1024px) {
+  max-width: rem($max-width);
+  @include autoMargin;
 }
