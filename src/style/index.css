@@ -422,11 +422,16 @@ legend {
   background: blue;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flexbox;
+  justify-content: flex-box;
   align-items: stretch;
 }
+@media (min-width: 768px) {
+  .searchForm__group .formInput {
+    width: 28.75rem;
+  }
+}
 .searchForm__group .formInput__input {
-  width: 28.75rem;
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */
