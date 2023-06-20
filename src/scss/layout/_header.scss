@@ -1,1 +1,35 @@
-// header.scss
+@use "./../utils" as *;
+.appHeader {
+
+  background: yellow;
+  padding: rem(16px) rem(20px);
+
+  @include mobile {
+    background-color: $dark-brown;
+    color: $white;
+  }
+}
+// 
+
+.logo {
+
+  width: rem(204px);
+  height: rem(60px);
+
+  &__link {
+    display: block;
+    // background: pink; url();
+  }
+}
+
+
+//멤버 서비스
+.memberOnly {
+  //hi
+}
+
+//검색 폼
+.searchForm {
+
+  //flex box container item
+}

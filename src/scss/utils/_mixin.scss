@@ -1,1 +1,20 @@
-// mixin.scss
+
+$breakPoint: 768px;
+
+@mixin mobile {
+  @media (max-width: {
+      $breakPoint - 1
+
+    }) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $breakPoint) {
+    @content;
+  }
+    // mixin.scss
+    
+    //미디ㅓ쿼리 믹스인
+}
