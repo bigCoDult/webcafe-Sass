@@ -20,6 +20,7 @@
 .logo {
   width: rem(204px);
   height: rem(60px);
+
   &__link {
     display: block;
     height: 100%;
@@ -46,5 +47,10 @@
   &__group {
     text-align: right;
     background: blue;
+    @include flexbox($justify: flexbox);
+
+    .formInput__input {
+      width: rem(460px);
+    }
   }
 }

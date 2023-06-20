@@ -420,6 +420,13 @@ legend {
 .searchForm__group {
   text-align: right;
   background: blue;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flexbox;
+  align-items: stretch;
+}
+.searchForm__group .formInput__input {
+  width: 28.75rem;
 }
 
 /*# sourceMappingURL=index.css.map */
