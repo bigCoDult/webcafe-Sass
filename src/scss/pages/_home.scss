@@ -21,28 +21,35 @@
 
 // 메인 콘텐츠 (데스크탑에만 적용)
 @include desktop {
+
+
   // 추천 서적
   .book {
     grid-area: book;
+    @include spriteY(-0px);
   }
-
+  
   // 새소식
   .news {
     grid-area: news;
+    @include spriteY(-24px);
   }
-
+  
   // 게시판
   .board {
     grid-area: board;
+    @include spriteY(-36px);
   }
 
   // 인기 사이트
   .favorite {
     grid-area: favorite;
+    @include spriteY(-48px);
   }
-
+  
   // 트위터
   .twitter {
     grid-area: twitter;
+    @include spriteY(-60px);
   }
 }

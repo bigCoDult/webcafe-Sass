@@ -583,18 +583,33 @@ legend {
 @media (min-width: 768px) {
   .book {
     grid-area: book;
+    background-image: url("/assets/images/sprite_main.png");
+    background-repeat: no-repeat;
+    background-position: 0px;
   }
   .news {
     grid-area: news;
+    background-image: url("/assets/images/sprite_main.png");
+    background-repeat: no-repeat;
+    background-position: -24px;
   }
   .board {
     grid-area: board;
+    background-image: url("/assets/images/sprite_main.png");
+    background-repeat: no-repeat;
+    background-position: -36px;
   }
   .favorite {
     grid-area: favorite;
+    background-image: url("/assets/images/sprite_main.png");
+    background-repeat: no-repeat;
+    background-position: -48px;
   }
   .twitter {
     grid-area: twitter;
+    background-image: url("/assets/images/sprite_main.png");
+    background-repeat: no-repeat;
+    background-position: -60px;
   }
 }
 

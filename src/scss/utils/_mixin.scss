@@ -100,3 +100,11 @@
   grid-column-gap: rem($column-gap);
   grid-row-gap: rem($row-gap);
 }
+
+//sprite 믹스인
+
+@mixin spriteY($yPx: 0px){
+  background-image: url("/assets/images/sprite_main.png");
+  background-repeat: no-repeat;
+  background-position: $yPx;
+}
