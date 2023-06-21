@@ -2,5 +2,34 @@
 
 // 메인 내비게이션
 .menu {
-  background: pink;
+  @include mobile {
+    &__list {
+      // $color:#f0e68c
+      // hsla($color, 0.5);
+      background: $accent-opacity-color;
+      width:70vw;
+      height: 100vh;
+      position: fixed;
+      left:0;
+      top:0;
+      @include padding(20px);
+    }
+  }
+  
+  @include desktop {
+    background: $brown;
+    
+    &__list {
+      @include containerMax();
+      background: blue;
+      @include paddingX(20px);
+      @include paddingY(20px);
+      @include flexbox($justify: space-between)
+    }
+    
+  }
+  &__link {
+    display: block;
+    @include padding(20px);
+  }
 }
